@@ -11,7 +11,6 @@ import { ADDRESSES, getRoleByAddress, formatAddress } from '../services/roleMapp
 import { realAPI, BLWithTransactions, TokenizedBLWithTransactions, MarketplaceListing } from '../services/realAPI'
 import { WalletRoleStatusIndicator } from './WalletRoleSwitcher'
 import { PendingAssetsOptIn } from './PendingAssetsOptIn'
-import { BoxStorageViewer } from './BoxStorageViewer'
 import { TradeBoxStorageInline } from './TradeBoxStorageInline'
 import { boxStorageService } from '../services/boxStorage'
 import { escrowV4BoxReader } from '../services/escrowV4BoxReader'

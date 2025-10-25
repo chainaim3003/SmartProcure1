@@ -430,7 +430,7 @@
         "credentialChainHash": "0xab12cd34ef56gh78ij90kl12mn34op56",
         "gleifVerificationEndpoint": "https://api.gleif.org/verify/984500D87AB1CF2D6E73"
       },
-      "algorandTransaction": {
+      "Transaction": {
         "walletAddress": "TIRUPUR3TEXTILES4MANUFACTURING5LIMITED6WALLET7ADDR8Q",
         "signature": "0x9876543210abcdef9876543210abcdef9876543210abcdef9876543210abcdef9876543210abcdef9876543210abcdef9876543210abcdef9876543210abcdef",
         "transactionId": "TXPO20250011234567890ABCDEFGHIJKLMNOPQRSTUVW",

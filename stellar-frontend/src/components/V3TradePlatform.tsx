@@ -9,7 +9,6 @@
 import React, { useState, useEffect } from 'react'
 import { ExporterDashboard } from '../components/ExporterDashboard'
 import { MarketplacePage } from '../components/MarketplacePage'
-import { ImporterDashboard } from '../components/ImporterDashboard'
 import { MarketplaceService } from '../services/MarketplaceService'
 import { useContracts } from '../hooks/useContracts'
 import { useWallet } from '../hooks/useWallet'

@@ -686,7 +686,7 @@
         "credentialType": "OrganizationalRole",
         "roleCredentialHash": "0xrole567890abcdef1234567890abcdef"
       },
-      "algorandTransaction": {
+      "Transaction": {
         "walletAddress": "WAREHOUSE5TIRUPUR6EXPORT7MANAGER8OFFICIAL9WALLET",
         "signature": "0xwr4056033200c3d5e6f7g8h9i0j1k2l3m4n5o6p7q8r9",
         "transactionId": "TXWR2025012067890HIJKLMNOPQRSTUVWXYZ123",
@@ -720,7 +720,7 @@
         "credentialChainHash": "0x7b8c9d0e1f2g3h4i5j6k7l8m9n0o1p2q",
         "gleifVerificationEndpoint": "https://api.gleif.org/verify/984500D87AB1CF2D6E73"
       },
-      "algorandTransaction": {
+      "Transaction": {
         "walletAddress": "TIRUPUR3TEXTILES4EXPORT5MANAGER6OFFICIAL7WALLET",
         "signature": "0xdep5067044311d4e6f7g8h9i0j1k2l3m4n5o6p7q8",
         "transactionId": "TXDEP202501206890MNOPQRSTUVWXYZ456789ABC",

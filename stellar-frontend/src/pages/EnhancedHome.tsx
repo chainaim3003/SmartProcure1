@@ -1,20 +1,13 @@
 import React, { useState, useMemo } from 'react';
 import { useWallet } from '@txnlab/use-wallet-react';
-import Account from '../components/Account';
-import { BLDashboard } from '../components/BLDashboard';
 import { EnhancedExporterDashboard } from '../components/EnhancedExporterDashboard';
 import { MarketplaceDashboard } from '../components/MarketplaceDashboard';
-import CarrierDashboard from '../components/CarrierDashboard';
-import { ImporterDashboard } from '../components/ImporterDashboard';
 import { ImporterDashboardEnhanced } from '../components/ImporterDashboardEnhanced';
 import { EscrowV5Marketplace } from '../components/EscrowV5Marketplace';
-import InvestorDashboard from '../components/InvestorDashboard';
 import RegulatorDashboard from '../components/RegulatorDashboard';
 import MetaMaskStyleRoleManager from '../components/MetaMaskStyleRoleManager';
-import { EnvironmentAwareWallet } from '../components/EnvironmentAwareWallet';
 import { SmartWalletButton } from '../components/SmartWalletButton';
 import { useAddressManager } from '../hooks/useAddressManager';
-import { getAlgodConfigFromViteEnvironment } from '../utils/network/getAlgoClientConfigs';
 import { useContracts } from '../hooks/useContracts';
 import { MarketplaceService } from '../services/MarketplaceService';
 // SIMPLIFIED: UniversalRoleSwitcher removed - tabs provide sufficient navigation
@@ -28,7 +21,6 @@ export default function EnhancedHome() {
   const [selectedInvestor, setSelectedInvestor] = useState<'INVESTOR_SMALL_1' | 'INVESTOR_SMALL_2' | 'INVESTOR_SMALL_3' | 'INVESTOR_SMALL_4' | 'INVESTOR_SMALL_5' | 'INVESTOR_LARGE_1' | 'INVESTOR_LARGE_2'>('INVESTOR_LARGE_1');
   const { activeAddress, signTransactions } = useWallet();
   const { isLocalNet, switchToRole, assignCurrentAddressToRole, getAllRoleAccounts } = useAddressManager();
-  const algoConfig = getAlgodConfigFromViteEnvironment();
   const { contracts, loading: contractsLoading, error: contractsError } = useContracts();
 
   // Create MarketplaceService instance for Importer Dashboard
@@ -155,7 +147,6 @@ export default function EnhancedHome() {
 
             {/* Environment-aware wallet connection section */}
             <div className="mb-8">
-              <EnvironmentAwareWallet />
             </div>
 
             <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
@@ -254,7 +245,6 @@ export default function EnhancedHome() {
               {/* Right: Account Info + Wallet Button */}
               <div className="flex items-center space-x-4">
                 <div className="text-xs text-gray-600">
-                  Network: {algoConfig.network}
                 </div>
                 {/* SIMPLIFIED: Removed UniversalRoleSwitcher - tabs are sufficient for role switching */}
                 <SmartWalletButton />
@@ -328,7 +318,6 @@ export default function EnhancedHome() {
       <main className="min-h-screen">
         {activeTab === 'home' && <HomeSection />}
         {activeTab === 'exporter' && <EnhancedExporterDashboard />}
-        {activeTab === 'carrier' && <CarrierDashboard />}
         {activeTab === 'importer' && marketplaceService && (
           <ImporterDashboardEnhanced
             marketplaceService={marketplaceService}

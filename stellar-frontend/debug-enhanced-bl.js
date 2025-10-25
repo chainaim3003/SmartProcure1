@@ -161,7 +161,6 @@ function testStructuredBLData(blData) {
         amount: blData.cargoValue || 100000,
         currency: blData.currency || 'USD'
       },
-      algorandBoxStorage: blData.boxStorage,
       complianceDocuments: blData.complianceDocuments || [],
       zkProofHash: blData.zkProofHash,
       rwaTokenization: {
@@ -177,9 +176,7 @@ function testStructuredBLData(blData) {
     console.log('📊 Sample data:', {
       transportDocumentReference: structuredBLData.transportDocumentReference,
       dcsaVersion: structuredBLData.dcsaVersion,
-      cargoValue: structuredBLData.declaredValue.amount,
-      hasBoxStorage: !!structuredBLData.algorandBoxStorage
-    });
+      cargoValue: structuredBLData.declaredValue.amount    });
     
     return structuredBLData;
   } catch (error) {

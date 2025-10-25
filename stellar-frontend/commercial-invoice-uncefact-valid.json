@@ -518,13 +518,6 @@
       "vLEIProof": {
         "credentialChainHash": "0x7b8c9d0e1f2g3h4i5j6k7l8m9n0o1p2q",
         "gleifVerificationEndpoint": "https://api.gleif.org/verify/984500D87AB1CF2D6E73"
-      },
-      "algorandTransaction": {
-        "walletAddress": "TIRUPUR3TEXTILES4MANUFACTURING5LIMITED6CFO7WALLET8Q",
-        "signature": "0xinv3045022100b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3",
-        "transactionId": "TXINV20250201234567890ABCDEFGHIJKLMNOPQRS",
-        "blockNumber": 45789012,
-        "timestamp": "2025-03-20T09:00:05Z"
       }
     }
   ],
